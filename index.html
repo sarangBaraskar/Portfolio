@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sarang Baraskar — Portfolio</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* small custom styles for subtle animations */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity 600ms ease, transform 600ms ease;
+    }
+    .fade-in.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    /* thin underline accent */
+    .accent-underline::after{
+      content: '';
+      display:block;
+      height:3px;
+      width:48px;
+      background:linear-gradient(90deg,#7c3aed,#06b6d4);
+      border-radius:2px;
+      margin-top:8px;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased leading-relaxed">
+  <main class="max-w-4xl mx-auto p-6 md:p-12">
+    <!-- Header -->
+    <header class="bg-white rounded-2xl shadow-md p-6 md:flex md:items-center md:justify-between">
+      <div>
+        <h1 class="text-3xl md:text-4xl font-extrabold">Sarang Baraskar</h1>
+        <p class="text-sm text-gray-600 mt-1">Front‑End Developer</p>
+        <div class="mt-4 text-sm text-gray-700">
+          <div>📞 +91-9579773796</div>
+          <div>✉️ sarangbaraskar07@gmail.com</div>
+          <div class="mt-1">🔗 <a href="https://github.com/sarangBaraskar" class="text-indigo-600 hover:underline">github.com/sarangBaraskar</a></div>
+        </div>
+      </div>
+      <div class="mt-6 md:mt-0 text-right">
+        <a href="#contact" class="inline-block px-4 py-2 bg-gradient-to-r from-indigo-500 to-cyan-400 text-white rounded-xl shadow hover:shadow-lg transition">Contact Me</a>
+      </div>
+    </header>
+
+    <!-- Objective -->
+    <section class="mt-8 bg-white rounded-2xl shadow p-6 fade-in" data-fade>
+      <h2 class="text-xl font-semibold">Career Objective</h2>
+      <div class="accent-underline"></div>
+      <p class="mt-3 text-gray-700">“I aim to build a successful career as a front-end developer by using my strong knowledge of HTML, CSS, Tailwind, Bootstrap, JavaScript, and React. I am dedicated, hardworking, and always ready to take challenges that help me and my team grow. My goal is to become an excellent coder and achieve a strong position in the software field while contributing positively to the company’s success.”</p>
+    </section>
+
+    <!-- Education & Experience -->
+    <div class="grid md:grid-cols-2 gap-6 mt-8">
+      <section class="bg-white rounded-2xl shadow p-6 fade-in" data-fade>
+        <h3 class="text-lg font-semibold">Education</h3>
+        <div class="mt-3 text-gray-700 space-y-3">
+          <div>
+            <strong>BCA — Dr. C. V. Raman University, Bilaspur</strong>
+            <div class="text-sm text-gray-600">2024 • CGPA: 8.26</div>
+          </div>
+          <div>
+            <strong>12th — Nagpur Board</strong>
+            <div class="text-sm text-gray-600">2021 • 68.50%</div>
+          </div>
+          <div>
+            <strong>10th — Nagpur Board</strong>
+            <div class="text-sm text-gray-600">2019 • 53.20%</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-white rounded-2xl shadow p-6 fade-in" data-fade>
+        <h3 class="text-lg font-semibold">Experience & Internship</h3>
+        <div class="mt-3 text-gray-700 space-y-4">
+          <div>
+            <strong>Internship — INFO Origin</strong>
+            <div class="text-sm text-gray-600">3 months • Worked as a developer and gained industry experience.</div>
+          </div>
+          <div>
+            <strong>Teaching — School</strong>
+            <div class="text-sm text-gray-600">1 year • Experience in teaching which improved communication and mentoring skills.</div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Skills -->
+    <section class="mt-8 bg-white rounded-2xl shadow p-6 fade-in" data-fade>
+      <h3 class="text-lg font-semibold">Skills</h3>
+      <div class="mt-4 grid grid-cols-2 sm:grid-cols-3 gap-3 text-sm">
+        <div class="p-3 rounded-lg border border-gray-100">C</div>
+        <div class="p-3 rounded-lg border border-gray-100">C++</div>
+        <div class="p-3 rounded-lg border border-gray-100">HTML</div>
+        <div class="p-3 rounded-lg border border-gray-100">CSS</div>
+        <div class="p-3 rounded-lg border border-gray-100">JavaScript</div>
+        <div class="p-3 rounded-lg border border-gray-100">React</div>
+        <div class="p-3 rounded-lg border border-gray-100">MySQL</div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="mt-8 bg-white rounded-2xl shadow p-6 fade-in" data-fade>
+      <h3 class="text-lg font-semibold">Projects</h3>
+      <ul class="mt-4 space-y-3 text-gray-700">
+        <li>
+          <strong>Furniro — Furniture Blog</strong>
+          <div class="text-sm">A responsive furniture blog built with HTML, CSS and JavaScript. Live demo: <a href="https://sarangbaraskar.github.io/demo/" class="text-indigo-600 hover:underline">Demo</a></div>
+        </li>
+        <li>
+          <strong>E-commerce web clone — Add to Cart</strong>
+          <div class="text-sm">An e-commerce clone demonstrating add-to-cart functionality and dynamic cart updates. Live demo: <a href="https://sarangbaraskar.github.io/E-commerce-add_to_cart/" class="text-indigo-600 hover:underline">Demo</a></div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Hobbies -->
+    <section class="mt-8 bg-white rounded-2xl shadow p-6 fade-in" data-fade>
+      <h3 class="text-lg font-semibold">Hobbies & Interests</h3>
+      <p class="mt-3 text-gray-700">Reading, Coding, Designing</p>
+    </section>
+
+    <!-- Contact / Footer -->
+    <footer id="contact" class="mt-8 p-6 rounded-2xl bg-gradient-to-r from-indigo-50 to-cyan-50 text-gray-800 shadow">
+      <h3 class="text-lg font-semibold">Contact</h3>
+      <p class="mt-2">If you would like to get in touch for work or collaboration, you can reach me at:</p>
+      <div class="mt-3">
+        <div>📞 +91-9579773796</div>
+        <div>✉️ sarangbaraskar07@gmail.com</div>
+        <div class="mt-2">🔗 <a href="https://github.com/sarangBaraskar" class="text-indigo-600 hover:underline">github.com/sarangBaraskar</a></div>
+      </div>
+      <div class="mt-6 text-sm text-gray-600">© "Sarang Baraskar" — Front-End Developer</div>
+    </footer>
+  </main>
+
+  <script src="portfolio.js"></script>
+  
+</body>
+</html>
